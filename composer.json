@@ -1,0 +1,23 @@
+{
+    "name": "mc0e/dokku-drupal8",
+    "description": "dokku project for d8.example.com",
+    "authors": [
+        {
+            "name": "mc0e",
+            "email": "andrew@mcnaughty.com"
+        }
+    ],
+    "require": {
+        "php": "~5.5.0",
+        "ext-mysql": "*",
+        "drush/drush": "dev-master"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    },
+    "scripts": {
+        "compile": [
+            "vendor/bin/drush make site.make.yml drupal"
+        ]
+    }
+}

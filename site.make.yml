@@ -1,0 +1,15 @@
+# Drush make this to build a new Drupal installation.
+
+api: 2
+core: 8.x
+
+defaults:
+  projects:
+      subdir: "contrib"
+
+
+projects: 
+  drupal: 
+    type: core
+    version: 8.0.0-beta7
+
